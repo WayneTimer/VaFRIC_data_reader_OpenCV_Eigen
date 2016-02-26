@@ -26,16 +26,14 @@
  */
 
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 #include <fstream>
 #include <sstream>
 #include <stdlib.h>
 #include <cstring>
 #include <dirent.h>
-#include <cvd/image.h>
-#include <cvd/image_io.h>
 
 
 #include <vector>
@@ -45,6 +43,8 @@
 #include <algorithm>
 
 #include <eigen3/Eigen/Dense>
+
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 
@@ -148,15 +148,14 @@ public:
     int getNumberofDepthFiles(){ return depthfilecount; }
 
     /// Get the png file
-    template <class T>
-    CVD::Image<T> getPNGImage(int ref_img_no, int which_blur_sample)
+    cv::Mat getPNGImage(int ref_img_no, int which_blur_sample)
     {
         char png_file_name[360];
         sprintf(png_file_name,"%s/scene_%02d_%04d.png",filebasename.c_str(),
                 which_blur_sample,ref_img_no);
 
-        CVD::Image<T> img;
-        CVD::img_load(img,png_file_name);
+        cv::Mat img;
+        img = cv::imread(png_file_name);
 
         return img;
     }

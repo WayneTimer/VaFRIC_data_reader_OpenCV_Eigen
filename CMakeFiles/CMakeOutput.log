@@ -411,3 +411,1153 @@ int main() {
 #endif
 }
 
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3514598460/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3514598460.dir/build.make CMakeFiles/cmTryCompileExec3514598460.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3514598460.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3514598460.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3514598460
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3514598460.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3514598460.dir/src.c.o  -o cmTryCompileExec3514598460 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1957374763/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1957374763.dir/build.make CMakeFiles/cmTryCompileExec1957374763.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1957374763.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1957374763.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1957374763
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1957374763.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1957374763.dir/src.cxx.o  -o cmTryCompileExec1957374763 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2956707143/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2956707143.dir/build.make CMakeFiles/cmTryCompileExec2956707143.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2956707143.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2956707143.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2956707143
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2956707143.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2956707143.dir/src.c.o  -o cmTryCompileExec2956707143 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec669535234/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec669535234.dir/build.make CMakeFiles/cmTryCompileExec669535234.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec669535234.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec669535234.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec669535234
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec669535234.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec669535234.dir/src.cxx.o  -o cmTryCompileExec669535234 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1519940773/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1519940773.dir/build.make CMakeFiles/cmTryCompileExec1519940773.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1519940773.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1519940773.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1519940773
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1519940773.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1519940773.dir/src.c.o  -o cmTryCompileExec1519940773 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3900016280/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3900016280.dir/build.make CMakeFiles/cmTryCompileExec3900016280.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3900016280.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3900016280.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3900016280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3900016280.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3900016280.dir/src.cxx.o  -o cmTryCompileExec3900016280 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1587482781/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1587482781.dir/build.make CMakeFiles/cmTryCompileExec1587482781.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1587482781.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1587482781.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1587482781
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1587482781.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1587482781.dir/src.c.o  -o cmTryCompileExec1587482781 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3695187910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3695187910.dir/build.make CMakeFiles/cmTryCompileExec3695187910.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3695187910.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3695187910.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3695187910
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3695187910.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3695187910.dir/src.cxx.o  -o cmTryCompileExec3695187910 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4282846897/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4282846897.dir/build.make CMakeFiles/cmTryCompileExec4282846897.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4282846897.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec4282846897.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4282846897
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4282846897.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec4282846897.dir/src.c.o  -o cmTryCompileExec4282846897 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1378669864/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1378669864.dir/build.make CMakeFiles/cmTryCompileExec1378669864.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1378669864.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1378669864.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1378669864
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1378669864.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1378669864.dir/src.cxx.o  -o cmTryCompileExec1378669864 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3231423275/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3231423275.dir/build.make CMakeFiles/cmTryCompileExec3231423275.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3231423275.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3231423275.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3231423275
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3231423275.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3231423275.dir/src.c.o  -o cmTryCompileExec3231423275 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3853864060/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3853864060.dir/build.make CMakeFiles/cmTryCompileExec3853864060.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3853864060.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3853864060.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3853864060
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3853864060.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3853864060.dir/src.cxx.o  -o cmTryCompileExec3853864060 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec534527859/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec534527859.dir/build.make CMakeFiles/cmTryCompileExec534527859.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec534527859.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec534527859.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec534527859
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec534527859.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec534527859.dir/src.c.o  -o cmTryCompileExec534527859 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2280259011/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2280259011.dir/build.make CMakeFiles/cmTryCompileExec2280259011.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2280259011.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2280259011.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2280259011
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2280259011.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2280259011.dir/src.cxx.o  -o cmTryCompileExec2280259011 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2101287481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2101287481.dir/build.make CMakeFiles/cmTryCompileExec2101287481.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2101287481.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2101287481.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2101287481
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2101287481.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2101287481.dir/src.c.o  -o cmTryCompileExec2101287481 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3639852600/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3639852600.dir/build.make CMakeFiles/cmTryCompileExec3639852600.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3639852600.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3639852600.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3639852600
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3639852600.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3639852600.dir/src.cxx.o  -o cmTryCompileExec3639852600 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2587703177/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2587703177.dir/build.make CMakeFiles/cmTryCompileExec2587703177.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2587703177.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2587703177.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2587703177
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2587703177.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2587703177.dir/src.c.o  -o cmTryCompileExec2587703177 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3541370945/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3541370945.dir/build.make CMakeFiles/cmTryCompileExec3541370945.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3541370945.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3541370945.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3541370945
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3541370945.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3541370945.dir/src.cxx.o  -o cmTryCompileExec3541370945 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1729712235/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1729712235.dir/build.make CMakeFiles/cmTryCompileExec1729712235.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1729712235.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1729712235.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1729712235
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1729712235.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1729712235.dir/src.c.o  -o cmTryCompileExec1729712235 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2687883743/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2687883743.dir/build.make CMakeFiles/cmTryCompileExec2687883743.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2687883743.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2687883743.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2687883743
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2687883743.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2687883743.dir/src.cxx.o  -o cmTryCompileExec2687883743 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2319631950/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2319631950.dir/build.make CMakeFiles/cmTryCompileExec2319631950.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2319631950.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2319631950.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2319631950
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2319631950.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2319631950.dir/src.c.o  -o cmTryCompileExec2319631950 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1964024334/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1964024334.dir/build.make CMakeFiles/cmTryCompileExec1964024334.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1964024334.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1964024334.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1964024334
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1964024334.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1964024334.dir/src.cxx.o  -o cmTryCompileExec1964024334 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2563198257/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2563198257.dir/build.make CMakeFiles/cmTryCompileExec2563198257.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2563198257.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2563198257.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2563198257
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2563198257.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2563198257.dir/src.c.o  -o cmTryCompileExec2563198257 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2411860765/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2411860765.dir/build.make CMakeFiles/cmTryCompileExec2411860765.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2411860765.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2411860765.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2411860765
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2411860765.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2411860765.dir/src.cxx.o  -o cmTryCompileExec2411860765 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1391557502/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1391557502.dir/build.make CMakeFiles/cmTryCompileExec1391557502.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1391557502.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1391557502.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1391557502
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1391557502.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1391557502.dir/src.c.o  -o cmTryCompileExec1391557502 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec519513318/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec519513318.dir/build.make CMakeFiles/cmTryCompileExec519513318.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec519513318.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec519513318.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec519513318
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec519513318.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec519513318.dir/src.cxx.o  -o cmTryCompileExec519513318 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2474534388/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2474534388.dir/build.make CMakeFiles/cmTryCompileExec2474534388.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2474534388.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2474534388.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2474534388
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2474534388.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2474534388.dir/src.c.o  -o cmTryCompileExec2474534388 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec455123984/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec455123984.dir/build.make CMakeFiles/cmTryCompileExec455123984.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec455123984.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec455123984.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec455123984
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec455123984.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec455123984.dir/src.cxx.o  -o cmTryCompileExec455123984 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1781531592/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1781531592.dir/build.make CMakeFiles/cmTryCompileExec1781531592.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1781531592.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1781531592.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1781531592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1781531592.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1781531592.dir/src.c.o  -o cmTryCompileExec1781531592 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1491384061/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1491384061.dir/build.make CMakeFiles/cmTryCompileExec1491384061.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1491384061.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1491384061.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1491384061
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1491384061.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1491384061.dir/src.cxx.o  -o cmTryCompileExec1491384061 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec68262617/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec68262617.dir/build.make CMakeFiles/cmTryCompileExec68262617.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec68262617.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec68262617.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec68262617
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec68262617.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec68262617.dir/src.c.o  -o cmTryCompileExec68262617 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1623070325/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1623070325.dir/build.make CMakeFiles/cmTryCompileExec1623070325.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1623070325.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1623070325.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1623070325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1623070325.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1623070325.dir/src.cxx.o  -o cmTryCompileExec1623070325 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2344141665/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2344141665.dir/build.make CMakeFiles/cmTryCompileExec2344141665.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2344141665.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2344141665.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2344141665
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2344141665.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2344141665.dir/src.c.o  -o cmTryCompileExec2344141665 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2424968936/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2424968936.dir/build.make CMakeFiles/cmTryCompileExec2424968936.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2424968936.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2424968936.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2424968936
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2424968936.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2424968936.dir/src.cxx.o  -o cmTryCompileExec2424968936 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3356379910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3356379910.dir/build.make CMakeFiles/cmTryCompileExec3356379910.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3356379910.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3356379910.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3356379910
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3356379910.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3356379910.dir/src.c.o  -o cmTryCompileExec3356379910 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1497898783/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1497898783.dir/build.make CMakeFiles/cmTryCompileExec1497898783.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1497898783.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1497898783.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1497898783
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1497898783.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1497898783.dir/src.cxx.o  -o cmTryCompileExec1497898783 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1880921488/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1880921488.dir/build.make CMakeFiles/cmTryCompileExec1880921488.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1880921488.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1880921488.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1880921488
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1880921488.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1880921488.dir/src.c.o  -o cmTryCompileExec1880921488 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3917921907/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3917921907.dir/build.make CMakeFiles/cmTryCompileExec3917921907.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3917921907.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3917921907.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3917921907
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3917921907.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3917921907.dir/src.cxx.o  -o cmTryCompileExec3917921907 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3268691769/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3268691769.dir/build.make CMakeFiles/cmTryCompileExec3268691769.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3268691769.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3268691769.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3268691769
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3268691769.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3268691769.dir/src.c.o  -o cmTryCompileExec3268691769 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3788031193/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3788031193.dir/build.make CMakeFiles/cmTryCompileExec3788031193.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3788031193.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3788031193.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3788031193
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3788031193.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3788031193.dir/src.cxx.o  -o cmTryCompileExec3788031193 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1795291286/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1795291286.dir/build.make CMakeFiles/cmTryCompileExec1795291286.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1795291286.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1795291286.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1795291286
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1795291286.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1795291286.dir/src.c.o  -o cmTryCompileExec1795291286 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1228686653/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1228686653.dir/build.make CMakeFiles/cmTryCompileExec1228686653.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1228686653.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec1228686653.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1228686653
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1228686653.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec1228686653.dir/src.cxx.o  -o cmTryCompileExec1228686653 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3259918831/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3259918831.dir/build.make CMakeFiles/cmTryCompileExec3259918831.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3259918831.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3259918831.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3259918831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3259918831.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3259918831.dir/src.c.o  -o cmTryCompileExec3259918831 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2352304092/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2352304092.dir/build.make CMakeFiles/cmTryCompileExec2352304092.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2352304092.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2352304092.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2352304092
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2352304092.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2352304092.dir/src.cxx.o  -o cmTryCompileExec2352304092 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3612976377/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3612976377.dir/build.make CMakeFiles/cmTryCompileExec3612976377.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3612976377.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec3612976377.dir/src.c.o   -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3612976377
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3612976377.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec3612976377.dir/src.c.o  -o cmTryCompileExec3612976377 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2403806451/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2403806451.dir/build.make CMakeFiles/cmTryCompileExec2403806451.dir/build
+make[1]: Entering directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2403806451.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2403806451.dir/src.cxx.o -c /home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2403806451
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2403806451.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2403806451.dir/src.cxx.o  -o cmTryCompileExec2403806451 -rdynamic 
+make[1]: Leaving directory `/home/timer/work_git/VaFRIC_data_reader_OpenCV_Eigen/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

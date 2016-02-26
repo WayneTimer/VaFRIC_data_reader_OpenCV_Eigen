@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include "VaFRIC/VaFRIC.h"
 
-#include <cvd/videodisplay.h>
-#include <cvd/gl_helpers.h>
+#include <opencv2/opencv.hpp>
 
 using namespace std;
-using namespace CVD;
 
 int main(void)
 {
@@ -25,20 +23,9 @@ int main(void)
 
     cout<<"Number of text files = " << dataset.getNumberofPoseFiles()<< endl;
 
-    CVD::Image< CVD::Rgb<CVD::byte> > in;
-    in = CVD::img_load("./test_data/test.png");
-
-    CVD::VideoDisplay window(in.size());
-    glDrawPixels(in);
-
-    glColor3f(1,0,0);
-    glBegin(GL_LINE);
-    glVertex(in.size()/2);
-    glVertex(in.size());
-    glEnd();
-    glFlush();
-
-    cout<<"done!"<<endl;
-    cin.get();
+    cv::Mat img;
+    img = cv::imread("./test_data/test.png");
+    cv::imshow("foo",img);
+    cv::waitKey(0);
     return 0;
 }
