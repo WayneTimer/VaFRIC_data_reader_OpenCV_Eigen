@@ -28,13 +28,10 @@
 
 #include<iostream>
 #include<string>
-#include<TooN/se3.h>
 
 #include <fstream>
 #include <sstream>
 #include <stdlib.h>
-#include <TooN/TooN.h>
-#include <TooN/se3.h>
 #include <cstring>
 #include <dirent.h>
 #include <cvd/image.h>
@@ -51,7 +48,8 @@
 
 using namespace std;
 
-namespace dataset{
+namespace dataset
+{
 
 typedef boost::mt19937 RNGType; ///< mersenne twister generator
 
@@ -131,7 +129,7 @@ public:
     }
 
     /// Obtain the pose of camera Tpov_cam, with respect to povray world
-    TooN::SE3<> computeTpov_cam(int ref_img_no, int which_blur_sample);
+    Eigen::MatrixXf computeTpov_cam(int ref_img_no, int which_blur_sample);
 
     /// POVRay gives euclidean distance of a point from camera, so convert it to obtain depth
     /// If a depth_array pointer is need, use float* depth = &depth_array[0];
@@ -195,6 +193,8 @@ private:
     /// Camera Intrincs
     int img_width, img_height;
     float u0, v0, focal_x, focal_y;
+
+    void vec3f_normalize(Eigen::Vector3f& v);
 };
 
 }

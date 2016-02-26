@@ -29,13 +29,19 @@
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/variate_generator.hpp>
 
-using namespace TooN;
-//using namespace boost;
+namespace dataset
+{
 
-namespace dataset{
+void vec3f_normalize(Eigen::Vector3f& v)
+{
+    float l;
+    l = sqrt( v(0)*v(0) + v(1)*v(1) + v(2)*v(2) );
+    v(0) = v(0)/l;
+    v(1) = v(1)/l;
+    v(2) = v(2)/l;
+}
 
-
-TooN::SE3<> vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
+Eigen::MatrixXf vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
 {
     char text_file_name[360];
 
@@ -48,7 +54,7 @@ TooN::SE3<> vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
 
     Eigen::Quaternionf direction;
     Eigen::Quaternionf upvector;
-    TooN::Vector<3>posvector;
+    Eigen::Vector3f posvector;
 
 
     while(1)
@@ -109,11 +115,11 @@ TooN::SE3<> vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
             cam_pos_str = cam_pos_str.substr(0,cam_pos_str.find("]"));
 
             iss.str(cam_pos_str);
-            iss >> posvector[0] ;
+            iss >> posvector(0) ;
             iss.ignore(1,',');
-            iss >> posvector[1] ;
+            iss >> posvector(1) ;
             iss.ignore(1,',');
-            iss >> posvector[2] ;
+            iss >> posvector(2) ;
             iss.ignore(1,',');
 
         }
@@ -121,41 +127,41 @@ TooN::SE3<> vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
     }
 
     /// z = dir / norm(dir)
-    Vector<3> z;
-    z[0] = direction.x();
-    z[1] = direction.y();
-    z[2] = direction.z();
-    normalize(z);
+    Eigen::Vector3f z;
+    z(0) = direction.x();
+    z(1) = direction.y();
+    z(2) = direction.z();
+    vec3f_normalize(z);
 
     /// x = cross(cam_up, z)
-    Vector<3> x = Zeros(3);
-    x[0] =  upvector.y() * z[2] - upvector.z() * z[1];
-    x[1] =  upvector.z() * z[0] - upvector.x() * z[2];
-    x[2] =  upvector.x() * z[1] - upvector.y() * z[0];
+    Eigen::Vector3f x = Eigen::Vector3f::Zero(3);
+    x(0) =  upvector.y() * z[2] - upvector.z() * z[1];
+    x(1) =  upvector.z() * z[0] - upvector.x() * z[2];
+    x(2) =  upvector.x() * z[1] - upvector.y() * z[0];
 
-    normalize(x);
+    vec3f_normalize(x);
 
     /// y = cross(z,x)
-    Vector<3> y = Zeros(3);
-    y[0] =  z[1] * x[2] - z[2] * x[1];
-    y[1] =  z[2] * x[0] - z[0] * x[2];
-    y[2] =  z[0] * x[1] - z[1] * x[0];
+    Eigen::Vector3f y = Eigen::Vector3f::Zero(3);
+    y(0) =  z[1] * x[2] - z[2] * x[1];
+    y(1) =  z[2] * x[0] - z[0] * x[2];
+    y(2) =  z[0] * x[1] - z[1] * x[0];
 
-    Matrix<3,3> R = Zeros(3,3);
-    R[0][0] = x[0];
-    R[1][0] = x[1];
-    R[2][0] = x[2];
+    Eigen::MatrixXf RT = Eigen::MatrixXf::Zero(3,4);
 
-    R[0][1] = y[0];
-    R[1][1] = y[1];
-    R[2][1] = y[2];
+    RT(0,0) = x[0];
+    RT(1,0) = x[1];
+    RT(2,0) = x[2];
 
-    R[0][2] = z[0];
-    R[1][2] = z[1];
-    R[2][2] = z[2];
+    RT(0,1) = y[0];
+    RT(1,1) = y[1];
+    RT(2,1) = y[2];
 
+    RT(0,2) = z[0];
+    RT(1,2) = z[1];
+    RT(2,2) = z[2];
 
-    return TooN::SE3<>(R, posvector);
+    return RT;
 }
 
 
@@ -353,33 +359,32 @@ void vaFRIC::addDepthNoise(std::vector<float>& depth_arrayIn, std::vector<float>
                 depth_arrayOut[i+j*img_width] = depth_arrayIn[i+j*img_width];
             else
             {
-                Vector<3> vertex_left;
-                Vector<3> vertex_right;
-                Vector<3> vertex_up;
-                Vector<3> vertex_down;
+                Eigen::Vector3f vertex_left,vertex_right,vertex_up,vertex_down;
 
-                vertex_left[0]  = h_points3D[i-1+j*img_width].x();
-                vertex_left[1]  = h_points3D[i-1+j*img_width].y();
-                vertex_left[2]  = h_points3D[i-1+j*img_width].z();
+                vertex_left(0)  = h_points3D[i-1+j*img_width].x();
+                vertex_left(1)  = h_points3D[i-1+j*img_width].y();
+                vertex_left(2)  = h_points3D[i-1+j*img_width].z();
 
-                vertex_right[0] = h_points3D[i+1+j*img_width].x();
-                vertex_right[1] = h_points3D[i+1+j*img_width].y();
-                vertex_right[2] = h_points3D[i+1+j*img_width].z();
+                vertex_right(0) = h_points3D[i+1+j*img_width].x();
+                vertex_right(1) = h_points3D[i+1+j*img_width].y();
+                vertex_right(2) = h_points3D[i+1+j*img_width].z();
 
-                vertex_up[0]    = h_points3D[i+(j-1)*img_width].x();
-                vertex_up[1]    = h_points3D[i+(j-1)*img_width].y();
-                vertex_up[2]    = h_points3D[i+(j-1)*img_width].z();
+                vertex_up(0)    = h_points3D[i+(j-1)*img_width].x();
+                vertex_up(1)    = h_points3D[i+(j-1)*img_width].y();
+                vertex_up(2)    = h_points3D[i+(j-1)*img_width].z();
 
-                vertex_down[0]  = h_points3D[i+(j+1)*img_width].x();
-                vertex_down[1]  = h_points3D[i+(j+1)*img_width].y();
-                vertex_down[2]  = h_points3D[i+(j+1)*img_width].z();
+                vertex_down(0)  = h_points3D[i+(j+1)*img_width].x();
+                vertex_down(1)  = h_points3D[i+(j+1)*img_width].y();
+                vertex_down(2)  = h_points3D[i+(j+1)*img_width].z();
 
-                Vector<3>dxv = vertex_right - vertex_left;
-                Vector<3>dyv = vertex_down  - vertex_up;
+                Eigen::Vector3f dxv,dyv;
+                dxv = vertex_right - vertex_left;
+                dyv = vertex_down  - vertex_up;
 
-                Vector<3> normal_vector = dyv ^ dxv ; //dataset::cross(dyv,dxv);
+                Eigen::Vector3f normal_vector;
+                normal_vector dyv.corss(dxv); //dataset::cross(dyv,dxv);
 
-                normalize(normal_vector);
+                vec3f_normalize(normal_vector);
 
                 double c = normal_vector[2];
 
@@ -448,33 +453,32 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
                 normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(255,255,255);
             else
             {
-                Vector<3> vertex_left;
-                Vector<3> vertex_right;
-                Vector<3> vertex_up;
-                Vector<3> vertex_down;
+                Eigen::Vector3f vertex_left,vertex_right,vertex_up,vertex_down;
 
-                vertex_left[0]  = h_points3D[i-1+j*img_width].x();
-                vertex_left[1]  = h_points3D[i-1+j*img_width].y();
-                vertex_left[2]  = h_points3D[i-1+j*img_width].z();
+                vertex_left(0)  = h_points3D[i-1+j*img_width].x();
+                vertex_left(1)  = h_points3D[i-1+j*img_width].y();
+                vertex_left(2)  = h_points3D[i-1+j*img_width].z();
 
-                vertex_right[0] = h_points3D[i+1+j*img_width].x();
-                vertex_right[1] = h_points3D[i+1+j*img_width].y();
-                vertex_right[2] = h_points3D[i+1+j*img_width].z();
+                vertex_right(0) = h_points3D[i+1+j*img_width].x();
+                vertex_right(1) = h_points3D[i+1+j*img_width].y();
+                vertex_right(2) = h_points3D[i+1+j*img_width].z();
 
-                vertex_up[0]    = h_points3D[i+(j-1)*img_width].x();
-                vertex_up[1]    = h_points3D[i+(j-1)*img_width].y();
-                vertex_up[2]    = h_points3D[i+(j-1)*img_width].z();
+                vertex_up(0)    = h_points3D[i+(j-1)*img_width].x();
+                vertex_up(1)    = h_points3D[i+(j-1)*img_width].y();
+                vertex_up(2)    = h_points3D[i+(j-1)*img_width].z();
 
-                vertex_down[0]  = h_points3D[i+(j+1)*img_width].x();
-                vertex_down[1]  = h_points3D[i+(j+1)*img_width].y();
-                vertex_down[2]  = h_points3D[i+(j+1)*img_width].z();
+                vertex_down(0)  = h_points3D[i+(j+1)*img_width].x();
+                vertex_down(1)  = h_points3D[i+(j+1)*img_width].y();
+                vertex_down(2)  = h_points3D[i+(j+1)*img_width].z();
 
-                Vector<3>dxv = vertex_right - vertex_left;
-                Vector<3>dyv = vertex_down  - vertex_up;
+                Eigen::Vector3f dxv,dxy;
+                dxv = vertex_right - vertex_left;
+                dyv = vertex_down  - vertex_up;
 
-                Vector<3> normal_vector = dyv ^ dxv ; //dataset::cross(dyv,dxv);
+                Eigen::Vector3f normal_vector;
+                normal_vector = dyv.cross(dxv); //dataset::cross(dyv,dxv);
 
-                normalize(normal_vector);
+                vec3f_normalize(normal_vector);
 
                 normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(
                             (unsigned char)(normal_vector[0]*128.f+128.f),

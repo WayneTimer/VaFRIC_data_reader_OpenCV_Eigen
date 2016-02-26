@@ -11,17 +11,11 @@ iostream
 -
 string
 -
-TooN/se3.h
--
 fstream
 -
 sstream
 -
 stdlib.h
--
-TooN/TooN.h
--
-TooN/se3.h
 -
 cstring
 -
