@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/test_vaFRIC.dir/src/test_vaFRIC.cpp.o  -o test_vaFRIC -rdynamic -lGLEW -lCg -lpthread -lCgGL /usr/local/lib/libcvd.so -lGVars3 -lboost_system -llapack -lblas -lGL -lGLU -lGLEW -lglut -Wl,-rpath,/usr/local/lib 
