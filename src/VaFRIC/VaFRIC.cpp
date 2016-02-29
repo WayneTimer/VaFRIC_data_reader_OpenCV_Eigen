@@ -443,14 +443,16 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
 
     get3Dpositions(ref_img_no,which_blur_sample,h_points3D);
 
-    CVD::Image< CVD::Rgb<CVD::byte> > normalImage(CVD::ImageRef(img_width,img_height));
+    //CVD::Image< CVD::Rgb<CVD::byte> > normalImage(CVD::ImageRef(img_width,img_height));
+    cv::Mat normalImage(img_height,img_width,CV_8UC3,cv::Scalar(0,0,0));
 
     for(int i = 0 ; i < img_width; i++ )
     {
         for(int j = 0 ; j < img_height; j++)
         {
             if (i == 0 || j == 0 || i == img_width-1 || j == img_height-1)
-                normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(255,255,255);
+                //normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(255,255,255);
+                normalImage.at<cv::Vec3b>(j,i) = cv::Scalar(255,255,255);
             else
             {
                 Eigen::Vector3f vertex_left,vertex_right,vertex_up,vertex_down;
@@ -480,7 +482,14 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
 
                 vec3f_normalize(normal_vector);
 
+                /*
                 normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(
+                            (unsigned char)(normal_vector[0]*128.f+128.f),
+                            (unsigned char)(normal_vector[1]*128.f+128.f),
+                            (unsigned char)(normal_vector[2]*128.f+128.f)
+                            );
+                */
+                nromalImage.at<cv::Vec3b>(j,i) =cv::Scalar(
                             (unsigned char)(normal_vector[0]*128.f+128.f),
                             (unsigned char)(normal_vector[1]*128.f+128.f),
                             (unsigned char)(normal_vector[2]*128.f+128.f)
@@ -490,7 +499,8 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
 
     }
 
-    CVD::img_save(normalImage,imgName.c_str());
+    //CVD::img_save(normalImage,imgName.c_str());
+    cv::imwrite(imgName,normalImage);
     delete h_points3D;
 }
 

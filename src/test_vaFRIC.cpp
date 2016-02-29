@@ -6,6 +6,19 @@
 
 using namespace std;
 
+void show_mat(cv::Mat &img,string name)
+{
+    cout << name << " property:" << endl;
+    cout << "dims: " << img.dims << endl;
+    cout << "rows: " << img.rows << endl;
+    cout << "cols: " << img.cols << endl;
+    cout << "channels: " << img.channels() << endl;
+    cout << "type: " << img.type() << endl;
+    cout << "depth: " << img.depth() << endl;
+    cout << "elemSize: " << img.elemSize() << endl;
+    cout << "elemSize1: " << img.elemSize1() << endl;
+}
+
 int main(void)
 {
 
@@ -25,6 +38,7 @@ int main(void)
 
     cv::Mat img;
     img = cv::imread("./test_data/test.png");
+    show_mat(img,"img");
     cv::imshow("foo",img);
     cv::waitKey(0);
     return 0;
