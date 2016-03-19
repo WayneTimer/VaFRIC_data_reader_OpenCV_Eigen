@@ -164,16 +164,21 @@ public:
     void convertPOV2TUMformat(float* pov_format, float* tum_format, int scale_factor);
     void convertPOV2TUMformat(float* pov_format, u_int16_t* tum_format, int scale_factor);
 
+    // Added by Timer
+    void findMaxMinDepth(std::vector<float>& depth_arrayIn,float& max_depth,float& min_depth);
+
     /// Convert Depth to Normalised Float PNG
-    void convertDepth2NormalisedFloat(float* depth_arrayIn, float* depth_arrayOut, int scale_factor);
+    void convertDepth2NormalisedFloat(std::vector<float>& depth_arrayIn, std::vector<float>& depth_arrayOut, int scale_factor);
 
     /// Convert Depth to Normalised Float [min,max] -> [0,1]
-    void convertDepth2NormalisedFloat(float *depth_arrayIn,
-                                              float *depth_arrayOut,
+    void convertDepth2NormalisedFloat(std::vector<float>& depth_arrayIn, std::vector<float>& depth_arrayOut,
                                               float max_depth, float min_depth);
 
     /// Convert Depth to Normal
     void convertDepth2NormalImage(int ref_img_no, int which_blur_sample, string imgName);
+
+    // Added by Timer
+    cv::Mat convertDepth2GrayImage(int ref_img_no, int which_blur_sample);
 
     /// Add Noise to the Depth Value
     /// \sigma(z,\theta) = z_{1} + z_{2}(z - z_{3})^2 + (z_{3}/\sqrt{z})*(\theta/(pi/2-theta))^2;

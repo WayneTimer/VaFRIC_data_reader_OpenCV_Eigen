@@ -32,7 +32,7 @@
 namespace dataset
 {
 
-void vec3f_normalize(Eigen::Vector3f& v)
+void vaFRIC::vec3f_normalize(Eigen::Vector3f& v)
 {
     float l;
     l = sqrt( v(0)*v(0) + v(1)*v(1) + v(2)*v(2) );
@@ -149,6 +149,7 @@ Eigen::MatrixXf vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
 
     Eigen::MatrixXf RT = Eigen::MatrixXf::Zero(3,4);
 
+    // R : 3x3
     RT(0,0) = x[0];
     RT(1,0) = x[1];
     RT(2,0) = x[2];
@@ -160,6 +161,11 @@ Eigen::MatrixXf vaFRIC::computeTpov_cam(int ref_img_no, int which_blur_sample)
     RT(0,2) = z[0];
     RT(1,2) = z[1];
     RT(2,2) = z[2];
+
+    // T : 3x1
+    RT(0,3) = posvector(0);
+    RT(1,3) = posvector(1);
+    RT(2,3) = posvector(2);
 
     return RT;
 }
@@ -307,10 +313,29 @@ void vaFRIC::convertPOV2TUMformat(float *pov_format, float *tum_format, int scal
 }
 
 
-void vaFRIC::convertDepth2NormalisedFloat(float *depth_arrayIn,
-                                          float *depth_arrayOut,
+void vaFRIC::findMaxMinDepth(std::vector<float>& depth_arrayIn,float& max_depth,float& min_depth)
+{
+    max_depth = depth_arrayIn[0];
+    min_depth = depth_arrayIn[0];
+
+    for(int i = 0 ; i < img_height ; i++)
+    {
+        for (int j = 0 ; j < img_width ; j++)
+        {
+            if (i==0 && j==0) continue;
+            if (depth_arrayIn[i*img_width+j] > max_depth) max_depth = depth_arrayIn[i*img_width+j];
+            if (depth_arrayIn[i*img_width+j] < min_depth) min_depth = depth_arrayIn[i*img_width+j];
+        }
+    }
+}
+
+void vaFRIC::convertDepth2NormalisedFloat(std::vector<float>& depth_arrayIn,
+                                          std::vector<float>& depth_arrayOut,
                                           float max_depth, float min_depth)
 {
+    if(!depth_arrayOut.size())
+        depth_arrayOut = std::vector<float>(img_width*img_height,0);
+
     for(int i = 0 ; i < img_height ; i++)
     {
         for (int j = 0 ; j < img_width ; j++)
@@ -320,9 +345,12 @@ void vaFRIC::convertDepth2NormalisedFloat(float *depth_arrayIn,
     }
 }
 
-void vaFRIC::convertDepth2NormalisedFloat(float *depth_arrayIn,
-                                          float *depth_arrayOut, int scale_factor)
+void vaFRIC::convertDepth2NormalisedFloat(std::vector<float>& depth_arrayIn,
+                                          std::vector<float>& depth_arrayOut, int scale_factor)
 {
+    if(!depth_arrayOut.size())
+        depth_arrayOut = std::vector<float>(img_width*img_height,0);
+
     for(int i = 0 ; i < img_height ; i++)
     {
         for (int j = 0 ; j < img_width ; j++)
@@ -382,7 +410,7 @@ void vaFRIC::addDepthNoise(std::vector<float>& depth_arrayIn, std::vector<float>
                 dyv = vertex_down  - vertex_up;
 
                 Eigen::Vector3f normal_vector;
-                normal_vector dyv.corss(dxv); //dataset::cross(dyv,dxv);
+                normal_vector = dyv.cross(dxv); //dataset::cross(dyv,dxv);
 
                 vec3f_normalize(normal_vector);
 
@@ -452,7 +480,12 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
         {
             if (i == 0 || j == 0 || i == img_width-1 || j == img_height-1)
                 //normalImage[CVD::ImageRef(i,j)] = CVD::Rgb<CVD::byte>(255,255,255);
-                normalImage.at<cv::Vec3b>(j,i) = cv::Scalar(255,255,255);
+            {
+                //normalImage.at<cv::Vec3b>(j,i) = cv::Scalar(255,255,255);
+                normalImage.at<cv::Vec3b>(j,i)[0] = (uchar)255;
+                normalImage.at<cv::Vec3b>(j,i)[1] = (uchar)255;
+                normalImage.at<cv::Vec3b>(j,i)[2] = (uchar)255;
+            }
             else
             {
                 Eigen::Vector3f vertex_left,vertex_right,vertex_up,vertex_down;
@@ -473,7 +506,7 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
                 vertex_down(1)  = h_points3D[i+(j+1)*img_width].y();
                 vertex_down(2)  = h_points3D[i+(j+1)*img_width].z();
 
-                Eigen::Vector3f dxv,dxy;
+                Eigen::Vector3f dxv,dyv;
                 dxv = vertex_right - vertex_left;
                 dyv = vertex_down  - vertex_up;
 
@@ -489,11 +522,9 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
                             (unsigned char)(normal_vector[2]*128.f+128.f)
                             );
                 */
-                nromalImage.at<cv::Vec3b>(j,i) =cv::Scalar(
-                            (unsigned char)(normal_vector[0]*128.f+128.f),
-                            (unsigned char)(normal_vector[1]*128.f+128.f),
-                            (unsigned char)(normal_vector[2]*128.f+128.f)
-                            );
+                normalImage.at<cv::Vec3b>(j,i)[0] = (unsigned char)(normal_vector[0]*128.f+128.f);
+                normalImage.at<cv::Vec3b>(j,i)[1] = (unsigned char)(normal_vector[1]*128.f+128.f);
+                normalImage.at<cv::Vec3b>(j,i)[2] = (unsigned char)(normal_vector[2]*128.f+128.f);
             }
         }
 
@@ -502,6 +533,22 @@ void vaFRIC::convertDepth2NormalImage(int ref_img_no, int which_blur_sample, str
     //CVD::img_save(normalImage,imgName.c_str());
     cv::imwrite(imgName,normalImage);
     delete h_points3D;
+}
+
+cv::Mat vaFRIC::convertDepth2GrayImage(int ref_img_no, int which_blur_sample)
+{
+    vector<float> depth_array;
+    readDepthFile(ref_img_no,which_blur_sample,depth_array);
+    float max_depth,min_depth;
+    findMaxMinDepth(depth_array,max_depth,min_depth);
+    printf("Max_depth = %f,  Min_depth = %f\n",max_depth,min_depth);
+    cv::Mat dImg(img_height,img_width,CV_8U,cv::Scalar(0));
+    for (int i=0;i<img_height;i++)
+        for (int j=0;j<img_width;j++)
+        {
+            dImg.at<uchar>(i,j) = (depth_array[i*img_width+j]-min_depth) / (max_depth-min_depth) * 255;
+        }
+    return dImg;
 }
 
 }
