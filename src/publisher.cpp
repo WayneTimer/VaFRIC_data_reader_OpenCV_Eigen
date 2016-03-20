@@ -46,6 +46,9 @@ int main(int argc, char **argv)
     int x,y;
     x = 0;
     y = 0;
+    
+    sleep(2);
+
     while (ros::ok() && y<Y_LIMIT)
     {
         char file_path[100];
